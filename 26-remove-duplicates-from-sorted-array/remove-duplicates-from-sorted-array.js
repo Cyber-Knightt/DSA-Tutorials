@@ -3,7 +3,6 @@
  * @return {number}
  */
 var removeDuplicates = function(nums) {
-    if (nums.length === 0) return 0;
     let i = 0; // Pointer for the place to insert next unique number
     for (let j = 1; j < nums.length; j++) {
         if (nums[j] !== nums[i]) {
