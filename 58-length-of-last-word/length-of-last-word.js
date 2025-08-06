@@ -7,7 +7,6 @@ var lengthOfLastWord = function (s) {
     let trims = s.trim()
     for (var i = trims.length - 1; i >= 0; i--) {
         if (trims[i] == " ") {
-            console.log('length-----', s, trims[i])
             break;
         }
         length++;
