@@ -13,11 +13,8 @@ var isIsomorphic = function (s, t) {
         let c1 = s[i];
         let c2 = t[i];
 
-        // If already mapped, check consistency
         if (mapST[c1] && mapST[c1] !== c2) return false;
         if (mapTS[c2] && mapTS[c2] !== c1) return false;
-
-        // Otherwise create mapping
         mapST[c1] = c2;
         mapTS[c2] = c1;
     }
