@@ -12,6 +12,5 @@ var repeatedSubstringPattern = function(s) {
             }
         }
     }
-    
     return false;
 };
