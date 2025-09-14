@@ -13,6 +13,5 @@ var findTheDifference = function(s, t) {
     for (let char of t) {
         result ^= char.charCodeAt(0);
     }
-    
     return String.fromCharCode(result)
 };
