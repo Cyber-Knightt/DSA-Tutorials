@@ -9,7 +9,6 @@ var findTheDifference = function(s, t) {
     for (let char of s) {
         result ^= char.charCodeAt(0);
     }
-    
     for (let char of t) {
         result ^= char.charCodeAt(0);
     }
