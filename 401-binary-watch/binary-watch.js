@@ -13,7 +13,6 @@ var readBinaryWatch = function(turnedOn) {
             }
         }
     }
-    
     return result;
 };
 
