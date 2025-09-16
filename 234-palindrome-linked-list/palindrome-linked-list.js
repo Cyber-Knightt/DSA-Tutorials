@@ -19,7 +19,6 @@ var isPalindrome = function (head) {
         slow = slow.next;
         fast = fast.next.next;
     }
-
     // Reverse the second half
     let prev = null;
     while (slow) {
