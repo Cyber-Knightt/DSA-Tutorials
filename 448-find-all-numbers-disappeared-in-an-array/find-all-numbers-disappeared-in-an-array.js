@@ -3,8 +3,8 @@
  * @return {number[]}
  */
 var findDisappearedNumbers = function (nums) {
+    let n = nums.length;
     let set = new Set(nums);
-
     let result = [];
 
     for (let i = 1; i <= nums.length; i++) {
@@ -12,6 +12,5 @@ var findDisappearedNumbers = function (nums) {
             result.push(i);
         }
     }
-    
     return result;
 };
