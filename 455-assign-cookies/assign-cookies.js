@@ -18,7 +18,6 @@ var findContentChildren = function (g, s) {
             i++;
             j++;
         } else {
-            // cookie too small, try next cookie
             j++;
         }
     }
