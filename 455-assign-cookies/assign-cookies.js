@@ -13,7 +13,6 @@ var findContentChildren = function (g, s) {
 
     while (i < g.length && j < s.length) {
         if (s[j] >= g[i]) {
-            // cookie satisfies the child
             count++;
             i++;
             j++;
