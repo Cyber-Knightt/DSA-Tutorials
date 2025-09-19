@@ -22,6 +22,5 @@ var findContentChildren = function (g, s) {
             j++;
         }
     }
-
     return count;
 };
