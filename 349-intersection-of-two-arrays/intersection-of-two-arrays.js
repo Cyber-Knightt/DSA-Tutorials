@@ -12,6 +12,5 @@ var intersection = function (nums1, nums2) {
             result.add(num);
         }
     }
-    
     return Array.from(result);
 };
