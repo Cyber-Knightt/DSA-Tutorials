@@ -3,7 +3,6 @@
  */
 var NumArray = function(nums) {
     this.prefix = new Array(nums.length + 1).fill(0);
-
     // Build prefix sums
     for (let i = 0; i < nums.length; i++) {
         this.prefix[i + 1] = this.prefix[i] + nums[i];
