@@ -14,6 +14,5 @@ var findPoisonedDuration = function(timeSeries, duration) {
 
     // Last attack always adds full duration
     total += duration;
-
     return total;
 };
