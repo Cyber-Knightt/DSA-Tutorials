@@ -4,9 +4,7 @@
  */
 var findRelativeRanks = function (score) {
     let arr = score.map((s, i) => [s, i]);
-
     arr.sort((a, b) => b[0] - a[0]);
-
     let result = new Array(score.length);
 
     // Step 4: assign ranks
