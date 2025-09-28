@@ -12,7 +12,6 @@
  */
 var diameterOfBinaryTree = function(root) {
     let maxDiameter = 0; // in edges
-
     function height(node) {
         if (!node) return 0; // height in nodes
 
@@ -25,7 +24,6 @@ var diameterOfBinaryTree = function(root) {
         // return height (in nodes) to parent
         return 1 + Math.max(left, right);
     }
-
     height(root);
     return maxDiameter;
 };
