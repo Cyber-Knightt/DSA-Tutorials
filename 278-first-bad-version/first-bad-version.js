@@ -28,7 +28,6 @@ var solution = function (isBadVersion) {
                 left = mid + 1; // first bad version is after mid
             }
         }
-
         return left;
     };
 };
