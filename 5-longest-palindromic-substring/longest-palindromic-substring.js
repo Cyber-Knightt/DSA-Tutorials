@@ -3,15 +3,15 @@
  * @return {string}
  */
 var longestPalindrome = function(s) {
-    if (s.length < 2) return s;
-    let start = 0, end = 0;
+    if (s.length < 2) return s
 
+    let start = 0, end = 0
     function expandAroundCenter(left, right) {
         while (left >= 0 && right < s.length && s[left] === s[right]) {
-            left--;
-            right++;
+            left--
+            right++
         }
-        return [left + 1, right - 1]; // return boundaries of palindrome
+        return [left + 1, right - 1] // return boundaries of palindrome
     }
     for (let i = 0; i < s.length; i++) {
         // Odd length palindrome
