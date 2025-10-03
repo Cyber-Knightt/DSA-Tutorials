@@ -13,7 +13,7 @@ var convert = function(s, numRows) {
     for (let char of s) {
         rows[currentRow] += char;
         if (currentRow === 0 || currentRow === numRows - 1) {
-            goingDown = !goingDown; // change direction
+            goingDown = !goingDown;
         }
         currentRow += goingDown ? 1 : -1;
     }
