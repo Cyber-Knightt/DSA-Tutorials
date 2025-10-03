@@ -17,6 +17,5 @@ var convert = function(s, numRows) {
         }
         currentRow += goingDown ? 1 : -1;
     }
-
     return rows.join("");
 };
