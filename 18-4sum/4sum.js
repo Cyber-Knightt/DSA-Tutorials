@@ -14,12 +14,11 @@ var fourSum = function (nums, target) {
         for (let j = i + 1; j < n - 2; j++) {
             if (j > i + 1 && nums[j] === nums[j - 1]) continue;
 
-            let left = j + 1;
-            let right = n - 1;
+            let left = j + 1
+            let right = n - 1
 
             while (left < right) {
                 let sum = nums[i] + nums[j] + nums[left] + nums[right];
-
                 if (sum === target) {
                     res.push([nums[i], nums[j], nums[left], nums[right]]);
                     left++;
