@@ -29,6 +29,5 @@ var divide = function(dividend, divisor) {
         a -= temp;
         result += multiple;
     }
-
     return negative ? -result : result;
 };
