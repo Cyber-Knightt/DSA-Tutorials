@@ -28,6 +28,5 @@ var threeSumClosest = function(nums, target) {
             }
         }
     }
-
     return closest;
 };
