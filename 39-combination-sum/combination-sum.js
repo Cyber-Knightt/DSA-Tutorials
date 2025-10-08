@@ -18,6 +18,5 @@ var combinationSum = function (candidates, target) {
             current.pop(); // backtrack
         }
     }
-    backtrack(0, [], 0)
-    return result;
+    backtrack(0, [], 0);return result;
 };
