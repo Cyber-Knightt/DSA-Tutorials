@@ -25,9 +25,7 @@ var removeNthFromEnd = function (head, n) {
         fast = fast.next;
         slow = slow.next;
     }
-
     // remove the nth node
     slow.next = slow.next.next;
-
-    return dummy.next; // return new head
+    return dummy.next;
 };
