@@ -27,8 +27,8 @@ var searchRange = function (nums, target) {
         while (left <= right) {
             let mid = Math.floor((left + right) / 2);
             if (nums[mid] === target) {
-                last = mid;           // potential last occurrence
-                left = mid + 1;       // keep searching right
+                last = mid;
+                left = mid + 1;
             } else if (nums[mid] < target) {
                 left = mid + 1;
             } else {
@@ -40,6 +40,5 @@ var searchRange = function (nums, target) {
 
     const first = findFirst(nums, target);
     const last = findLast(nums, target);
-
     return [first, last];
 };
