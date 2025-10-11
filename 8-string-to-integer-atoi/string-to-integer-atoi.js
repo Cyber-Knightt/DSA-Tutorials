@@ -11,7 +11,6 @@ var myAtoi = function(s) {
     let i = 0;
     let result = 0;
 
-    // Step 2: Handle sign
     if (s[i] === '+' || s[i] === '-') {
         sign = s[i] === '-' ? -1 : 1;
         i++;
