@@ -8,7 +8,6 @@ var intToRoman = function (num) {
     const symbols = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
 
     let result = "";
-
     // Step 2: Build Roman numeral
     for (let i = 0; i < values.length; i++) {
         while (num >= values[i]) {     // keep subtracting the current value
