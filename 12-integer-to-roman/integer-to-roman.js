@@ -16,6 +16,5 @@ var intToRoman = function (num) {
             result += symbols[i];      // append corresponding symbol
         }
     }
-
     return result;
 };
