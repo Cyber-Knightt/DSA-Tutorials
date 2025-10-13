@@ -8,7 +8,7 @@ var nextPermutation = function (nums) {
     while (i >= 0 && nums[i] >= nums[i + 1]) {
         i--;
     }
-
+    
     // Step 2: If found, find next greater element and swap
     if (i >= 0) {
         let j = nums.length - 1;
@@ -17,7 +17,6 @@ var nextPermutation = function (nums) {
         }
         [nums[i], nums[j]] = [nums[j], nums[i]];
     }
-
     // Step 3: Reverse the part after index i
     let left = i + 1;
     let right = nums.length - 1;
