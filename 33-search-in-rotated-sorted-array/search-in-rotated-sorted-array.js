@@ -19,7 +19,7 @@ var search = function (nums, target) {
             } else {
                 left = mid + 1; // search in right half
             }
-        } 
+        }
         // Otherwise, right half is sorted
         else {
             if (target > nums[mid] && target <= nums[right]) {
@@ -29,6 +29,5 @@ var search = function (nums, target) {
             }
         }
     }
-
-    return -1; // target not found
+    return -1;
 };
