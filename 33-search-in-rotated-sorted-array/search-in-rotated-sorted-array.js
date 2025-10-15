@@ -9,15 +9,13 @@ var search = function (nums, target) {
 
     while (left <= right) {
         let mid = Math.floor((left + right) / 2);
-
         if (nums[mid] === target) return mid;
-
         // Check if left half is sorted
         if (nums[left] <= nums[mid]) {
             if (target >= nums[left] && target < nums[mid]) {
                 right = mid - 1; // search in left half
             } else {
-                left = mid + 1; // search in right half
+                left = mid+1;
             }
         }
         // Otherwise, right half is sorted
