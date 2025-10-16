@@ -5,8 +5,10 @@
 var countAndSay = function (n) {
     if (n === 1) return "1";
     let result = "1";
+    
     for (let i = 2; i <= n; i++) {
         let prev = result;
+
         let current = "";
         let count = 1;
 
