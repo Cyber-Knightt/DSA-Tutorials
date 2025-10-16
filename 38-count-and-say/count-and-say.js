@@ -4,10 +4,7 @@
  */
 var countAndSay = function (n) {
     if (n === 1) return "1";
-
     let result = "1";
-
-    // Build sequence iteratively
     for (let i = 2; i <= n; i++) {
         let prev = result;
         let current = "";
@@ -22,7 +19,6 @@ var countAndSay = function (n) {
                 count = 1;
             }
         }
-
         // Add the last counted digit
         current += count + prev[prev.length - 1];
         result = current;
