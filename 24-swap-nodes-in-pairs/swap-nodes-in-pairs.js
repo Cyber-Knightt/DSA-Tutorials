@@ -15,8 +15,6 @@ var swapPairs = function (head) {
     dummy.next = head;
 
     let current = dummy;
-
-    // Traverse while we have at least two nodes ahead
     while (current.next && current.next.next) {
         let first = current.next;
         let second = current.next.next;
@@ -29,6 +27,5 @@ var swapPairs = function (head) {
         // Move current two nodes ahead
         current = first;
     }
-
     return dummy.next;
 };
