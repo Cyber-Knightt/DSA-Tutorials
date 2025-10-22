@@ -34,6 +34,5 @@ var search = function (nums, target) {
             }
         }
     }
-
     return false;
 };
