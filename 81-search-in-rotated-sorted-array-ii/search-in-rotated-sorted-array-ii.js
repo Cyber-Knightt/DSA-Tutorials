@@ -25,7 +25,6 @@ var search = function (nums, target) {
                 left = mid + 1;
             }
         }
-        // Right half is sorted
         else {
             if (nums[mid] < target && target <= nums[right]) {
                 left = mid + 1;
