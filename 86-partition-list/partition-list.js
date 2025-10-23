@@ -27,7 +27,7 @@ var partition = function (head, x) {
         head = head.next;
     }
 
-    after.next = null; // prevent cycle
+    after.next = null
     before.next = afterHead.next
     return beforeHead.next;
 };
