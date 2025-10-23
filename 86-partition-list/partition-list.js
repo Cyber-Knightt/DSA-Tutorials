@@ -28,7 +28,6 @@ var partition = function (head, x) {
     }
 
     after.next = null; // prevent cycle
-    before.next = afterHead.next; // connect two lists
-
+    before.next = afterHead.next
     return beforeHead.next;
 };
