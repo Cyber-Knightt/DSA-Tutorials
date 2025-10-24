@@ -22,8 +22,7 @@ var reverseBetween = function (head, left, right) {
     for (let i = 1; i < left; i++) {
         prev = prev.next;
     }
-
-    // `start` points to the first node of the sublist
+    
     let start = prev.next;
     // `then` points to the node that will be reversed
     let then = start.next;
