@@ -35,6 +35,5 @@ var reverseBetween = function (head, left, right) {
         prev.next = then;
         then = start.next;
     }
-
     return dummy.next;
 };
