@@ -15,6 +15,5 @@ var simplifyPath = function (path) {
             stack.push(part); // valid directory name
         }
     }
-
     return '/' + stack.join('/');
 };
