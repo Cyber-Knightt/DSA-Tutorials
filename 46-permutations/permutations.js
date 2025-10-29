@@ -6,7 +6,6 @@ var permute = function (nums) {
     const result = [];
 
     function backtrack(path, used) {
-        // Base case: full permutation formed
         if (path.length === nums.length) {
             result.push([...path]);
             return;
@@ -14,7 +13,6 @@ var permute = function (nums) {
 
         for (let i = 0; i < nums.length; i++) {
             if (used[i]) continue; // Skip already used elements
-
             // Choose
             path.push(nums[i]);
             used[i] = true;
@@ -27,6 +25,7 @@ var permute = function (nums) {
             used[i] = false;
         }
     }
+    
     backtrack([], []);
     return result;
 };
