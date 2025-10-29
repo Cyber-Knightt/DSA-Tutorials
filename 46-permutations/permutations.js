@@ -27,7 +27,6 @@ var permute = function (nums) {
             used[i] = false;
         }
     }
-
     backtrack([], []);
     return result;
 };
