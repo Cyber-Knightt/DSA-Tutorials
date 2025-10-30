@@ -12,7 +12,5 @@ var climbStairs = function(n) {
         const current = first + second; // ways(n) = ways(n-1) + ways(n-2)
         first = second;  // move window forward
         second = current;
-    }
-
-    return second; // final answer
+    }return second; // final answer
 };
