@@ -18,7 +18,8 @@ var hasCycle = function (head) {
 
     while (fast && fast.next) {
         slow = slow.next;        // move 1 step
-        fast = fast.next.next;   // move 2 steps
+        fast = fast.next.next;
+        
         if (slow === fast) {     // they meet — cycle detected
             return true;
         }
