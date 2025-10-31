@@ -23,7 +23,5 @@ var hasCycle = function (head) {
         if (slow === fast) {     // they meet — cycle detected
             return true;
         }
-    }
-
-    return false;
+    }return false;
 };
