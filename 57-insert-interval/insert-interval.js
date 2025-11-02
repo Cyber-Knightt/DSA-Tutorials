@@ -8,13 +8,11 @@ var insert = function (intervals, newInterval) {
     let i = 0;
     let n = intervals.length;
 
-    // 1️⃣ Add all intervals before newInterval (no overlap)
     while (i < n && intervals[i][1] < newInterval[0]) {
         result.push(intervals[i]);
         i++;
     }
 
-    // 2️⃣ Merge all overlapping intervals
     while (i < n && intervals[i][0] <= newInterval[1]) {
         newInterval[0] = Math.min(newInterval[0], intervals[i][0]);
         newInterval[1] = Math.max(newInterval[1], intervals[i][1]);
@@ -22,11 +20,9 @@ var insert = function (intervals, newInterval) {
     }
     result.push(newInterval); // merged interval added
 
-    // 3️⃣ Add remaining intervals
     while (i < n) {
         result.push(intervals[i]);
         i++;
     }
-
     return result;
 };
