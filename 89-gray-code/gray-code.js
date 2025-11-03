@@ -11,7 +11,5 @@ var grayCode = function (n) {
         for (let j = result.length - 1; j >= 0; j--) {
             result.push(result[j] + addOn);
         }
-    }
-
-    return result;
+    }return result;
 };
