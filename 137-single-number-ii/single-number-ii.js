@@ -9,5 +9,6 @@ var singleNumber = function (nums) {
     for (const x of nums) {
         ones = (ones ^ x) & ~twos;
         twos = (twos ^ x) & ~ones;
-    }return ones; 
+    }
+    return ones; 
 };
