@@ -18,5 +18,6 @@ var canCompleteCircuit = function (gas, cost) {
             startStation = i + 1; // try next station
             currTank = 0;         // reset current tank
         }
-    }return totalTank >= 0 ? startStation : -1;
+    }
+    return totalTank >= 0 ? startStation : -1;
 };
