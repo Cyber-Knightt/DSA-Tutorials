@@ -5,8 +5,7 @@
 var sortColors = function (nums) {
     let low = 0;              // position for next 0
     let mid = 0;              // current element
-    let high = nums.length - 1; // position for next 2
-
+    let high = nums.length - 1 
     while (mid <= high) {
         if (nums[mid] === 0) {
             // swap 0 to the front
