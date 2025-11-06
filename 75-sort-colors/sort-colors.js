@@ -19,7 +19,7 @@ var sortColors = function (nums) {
         } else {
             // nums[mid] === 2 → swap 2 to the end
             [nums[mid], nums[high]] = [nums[high], nums[mid]];
-            high--;
+            high--
         }
     }
 };
