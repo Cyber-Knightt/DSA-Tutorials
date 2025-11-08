@@ -17,6 +17,5 @@ var reverse = function(x) {
 
     // check for overflow (32-bit signed integer range)
     if (rev < -(2 ** 31) || rev > (2 ** 31 - 1)) return 0;
-
     return rev;
 };
