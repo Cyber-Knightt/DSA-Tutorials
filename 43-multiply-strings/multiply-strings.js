@@ -22,7 +22,5 @@ var multiply = function (num1, num2) {
     }
 
     // remove leading zeros
-    while (res[0] === 0) res.shift();
-
-    return res.join('');
+    while (res[0] === 0) res.shift();return res.join('');
 };
