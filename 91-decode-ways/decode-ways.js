@@ -13,10 +13,12 @@ var numDecodings = function (s) {
     for (let i = 2; i <= n; i++) {
         const oneDigit = Number(s.slice(i - 1, i));
         const twoDigits = Number(s.slice(i - 2, i));
+
         // Single digit valid (1–9)
         if (oneDigit >= 1 && oneDigit <= 9) {
             dp[i] += dp[i - 1];
         }
+        
         if (twoDigits >= 10 && twoDigits <= 26) {
             dp[i] += dp[i - 2];
         }
