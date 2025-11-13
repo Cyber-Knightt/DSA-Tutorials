@@ -23,7 +23,5 @@ var numDecodings = function (s) {
         if (twoDigits >= 10 && twoDigits <= 26) {
             dp[i] += dp[i - 2];
         }
-    }
-
-    return dp[n];
+    }return dp[n];
 };
