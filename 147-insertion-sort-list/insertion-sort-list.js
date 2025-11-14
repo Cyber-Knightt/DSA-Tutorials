@@ -26,8 +26,7 @@ var insertionSortList = function(head) {
 
         // insert current between prev and prev.next
         current.next = prev.next;
-        prev.next = current;
-
-        current = nextNode;
-    }return dummy.next;
+        prev.next = current;current = nextNode;
+    }
+    return dummy.next;
 };
