@@ -29,7 +29,5 @@ var insertionSortList = function(head) {
         prev.next = current;
 
         current = nextNode;
-    }
-
-    return dummy.next;
+    }return dummy.next;
 };
