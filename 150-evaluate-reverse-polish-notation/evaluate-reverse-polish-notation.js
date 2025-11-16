@@ -17,7 +17,5 @@ var evalRPN = function (tokens) {
         } else {
             stack.push(Number(token)); // convert string → number
         }
-    }
-
-    return stack.pop();
+    }return stack.pop();
 };
