@@ -16,11 +16,10 @@ var isInterleave = function (s1, s2, s3) {
 
             if (i > 0 && s1[i - 1] === s3[i + j - 1]) {
                 dp[i][j] ||= dp[i - 1][j];
-            }
-
-            if (j > 0 && s2[j - 1] === s3[i + j - 1]) {
+            }if (j > 0 && s2[j - 1] === s3[i + j - 1]) {
                 dp[i][j] ||= dp[i][j - 1];
             }
         }
-    }return dp[s1.length][s2.length];
+    }
+    return dp[s1.length][s2.length];
 };
