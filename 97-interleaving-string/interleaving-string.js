@@ -22,7 +22,5 @@ var isInterleave = function (s1, s2, s3) {
                 dp[i][j] ||= dp[i][j - 1];
             }
         }
-    }
-
-    return dp[s1.length][s2.length];
+    }return dp[s1.length][s2.length];
 };
