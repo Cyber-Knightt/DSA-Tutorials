@@ -22,5 +22,6 @@ var removeElements = function (head, val) {
             current = current.next; // move forward
         }
     }
+    
     return dummy.next;
 };
