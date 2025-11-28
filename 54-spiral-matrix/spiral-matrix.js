@@ -4,7 +4,6 @@
  */
 var spiralOrder = function (matrix) {
     let result = [];
-
     if (matrix.length === 0) return result;
 
     let top = 0;
