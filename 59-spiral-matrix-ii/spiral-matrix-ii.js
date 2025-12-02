@@ -38,7 +38,5 @@ var generateMatrix = function (n) {
             }
             left++;
         }
-    }
-
-    return matrix;
+    }return matrix
 };
