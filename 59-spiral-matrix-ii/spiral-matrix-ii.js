@@ -21,14 +21,14 @@ var generateMatrix = function (n) {
         for (let i = top; i <= bottom; i++) {
             matrix[i][right] = num++;
         }
-        right--;
+        right--
 
         // right → left
         if (top <= bottom) {
             for (let i = right; i >= left; i--) {
                 matrix[bottom][i] = num++;
             }
-            bottom--;
+            bottom--
         }
 
         // bottom → top
