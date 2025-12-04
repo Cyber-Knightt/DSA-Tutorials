@@ -18,6 +18,5 @@ var searchMatrix = function(matrix, target) {
         if (value === target) return true;
         if (value < target) left = mid + 1;
         else right = mid - 1;
-    }
-    return false;
+    }return false;
 };
