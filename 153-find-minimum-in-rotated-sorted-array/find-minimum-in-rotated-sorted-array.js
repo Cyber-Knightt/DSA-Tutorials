@@ -16,8 +16,5 @@ var findMin = function(nums) {
             // Otherwise, min is in left half INCLUDING mid
             right = mid;
         }
-    }
-
-    // left == right → minimum index
-    return nums[left];
+    }return nums[left];
 };
